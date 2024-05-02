@@ -1,0 +1,23 @@
+mat-toolbar {
+  justify-content: space-evenly;
+  background-color: #3B9C9C;
+  padding: 0 90px;
+  z-index: 1000;
+  position: fixed;
+  margin-bottom: 20%;
+}
+
+img {
+  max-width: 100px;
+  padding-right: 50px;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.example-spacer {
+  flex:1 1 auto;
+}

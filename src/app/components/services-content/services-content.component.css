@@ -25,3 +25,7 @@ mat-card {
 img {
   margin: auto;
 }
+
+.mat-mdc-button:not(:disabled) {
+  color: black;
+}

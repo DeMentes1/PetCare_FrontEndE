@@ -23,6 +23,8 @@ import {
   MatCardTitle
 } from "@angular/material/card";
 import { ServicesContentComponent } from './components/services-content/services-content.component';
+import { NavbarComponent } from './components/shared/navbar/navbar.component';
+import {MatToolbar} from "@angular/material/toolbar";
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ import { ServicesContentComponent } from './components/services-content/services
     RegisterViewComponent,
     LoginViewComponent,
     HomeContentComponent,
-    ServicesContentComponent
+    ServicesContentComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -52,6 +55,7 @@ import { ServicesContentComponent } from './components/services-content/services
     MatCardActions,
     MatCardTitle,
     MatCardSubtitle,
+    MatToolbar,
   ],
   providers: [
     provideAnimationsAsync()
