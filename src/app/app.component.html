@@ -1,1 +1,8 @@
-<app-navbar></app-navbar>
+
+<ng-container *ngIf="shouldShowNavbar()">
+  <app-navbar></app-navbar>
+</ng-container>
+
+<router-outlet></router-outlet>
+
+
