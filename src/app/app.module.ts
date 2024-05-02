@@ -30,6 +30,7 @@ import { SupportContentComponent } from './components/support-content/support-co
 import { ProfileContentComponent } from './components/profile-content/profile-content.component';
 import { BookingContentComponent } from './components/booking-content/booking-content.component';
 import {MatGridList, MatGridTile} from "@angular/material/grid-list";
+import {NgOptimizedImage} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -68,7 +69,8 @@ import {MatGridList, MatGridTile} from "@angular/material/grid-list";
     MatHint,
     MatFormFieldModule,
     MatGridTile,
-    MatGridList
+    MatGridList,
+    NgOptimizedImage
   ],
   providers: [
     provideAnimationsAsync()
