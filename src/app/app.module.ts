@@ -7,21 +7,30 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { RegisterViewComponent } from './components/register/register-view/register-view.component';
 import {MatFormField} from "@angular/material/form-field";
 import {MatInput} from "@angular/material/input";
-import {MatIcon} from "@angular/material/icon";
-import {MatButton, MatFabButton, MatIconButton} from "@angular/material/button";
+import {MatIcon, MatIconModule} from "@angular/material/icon";
+import {MatButton, MatButtonModule, MatFabButton, MatIconButton} from "@angular/material/button";
 import {MatCheckbox} from "@angular/material/checkbox";
 import {MatSlideToggle} from "@angular/material/slide-toggle";
 import {MatLabel} from "@angular/material/form-field";
 import { LoginViewComponent } from './components/login-view/login-view.component';
 import { HomeContentComponent } from './components/home-content/home-content.component';
-import {MatCard, MatCardContent, MatCardModule} from "@angular/material/card";
+import {
+  MatCard,
+  MatCardActions,
+  MatCardContent,
+  MatCardModule,
+  MatCardSubtitle,
+  MatCardTitle
+} from "@angular/material/card";
+import { ServicesContentComponent } from './components/services-content/services-content.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RegisterViewComponent,
     LoginViewComponent,
-    HomeContentComponent
+    HomeContentComponent,
+    ServicesContentComponent
   ],
   imports: [
     BrowserModule,
@@ -29,15 +38,20 @@ import {MatCard, MatCardContent, MatCardModule} from "@angular/material/card";
     MatFormField,
     MatInput,
     MatIcon,
+    MatIconModule,
     MatIconButton,
     MatCheckbox,
     MatSlideToggle,
     MatButton,
+    MatButtonModule,
     MatLabel,
     MatCard,
     MatCardModule,
     MatCardContent,
-    MatFabButton
+    MatFabButton,
+    MatCardActions,
+    MatCardTitle,
+    MatCardSubtitle,
   ],
   providers: [
     provideAnimationsAsync()
