@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "PetCarev1": {
+    "petcarev1": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -100,6 +100,23 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "petcarev1:build:production",
+              "serveTarget": "petcarev1:serve:production"
+            },
+            "development": {
+              "buildTarget": "petcarev1:build:development",
+              "serveTarget": "petcarev1:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
