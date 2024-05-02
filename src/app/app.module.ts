@@ -12,11 +12,13 @@ import {MatButton, MatIconButton} from "@angular/material/button";
 import {MatCheckbox} from "@angular/material/checkbox";
 import {MatSlideToggle} from "@angular/material/slide-toggle";
 import {MatLabel} from "@angular/material/form-field";
+import { LoginViewComponent } from './components/login-view/login-view.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RegisterViewComponent
+    RegisterViewComponent,
+    LoginViewComponent
   ],
   imports: [
     BrowserModule,
