@@ -12,6 +12,7 @@ import {MatButton, MatButtonModule, MatFabButton, MatIconButton} from "@angular/
 import {MatCheckbox} from "@angular/material/checkbox";
 import {MatSlideToggle} from "@angular/material/slide-toggle";
 import {MatLabel} from "@angular/material/form-field";
+import { LoginViewComponent } from './components/login-view/login-view.component';
 import { HomeContentComponent } from './components/home-content/home-content.component';
 import {
   MatCard,
@@ -27,6 +28,7 @@ import { ServicesContentComponent } from './components/services-content/services
   declarations: [
     AppComponent,
     RegisterViewComponent,
+    LoginViewComponent,
     HomeContentComponent,
     ServicesContentComponent
   ],
