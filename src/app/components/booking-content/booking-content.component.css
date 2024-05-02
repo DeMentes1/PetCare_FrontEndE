@@ -1,0 +1,25 @@
+p{
+  margin-left: 180px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  font-size: 40px;
+}
+
+mat-grid-tile {
+  margin-left: 200px;
+  margin-bottom: 8px;
+}
+
+mat-card {
+  position: relative;
+  height: 500px;
+  width: 300px;
+}
+
+img {
+
+  top: 50px;
+  left: 0;
+  width: 150%;
+  height: 60%;
+}
