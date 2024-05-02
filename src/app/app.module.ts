@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { RegisterViewComponent } from './components/register-view/register-view.component';
-import {MatFormField} from "@angular/material/form-field";
+import {MatFormFieldModule, MatFormField, MatHint} from "@angular/material/form-field";
 import {MatInput} from "@angular/material/input";
 import {MatIcon, MatIconModule} from "@angular/material/icon";
 import {MatButton, MatButtonModule, MatFabButton, MatIconButton} from "@angular/material/button";
@@ -26,6 +26,10 @@ import { ServicesContentComponent } from './components/services-content/services
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import {MatToolbar} from "@angular/material/toolbar";
 import { VeterinaryContentComponent } from './components/veterinary-content/veterinary-content.component';
+import { SupportContentComponent } from './components/support-content/support-content.component';
+import { ProfileContentComponent } from './components/profile-content/profile-content.component';
+import { BookingContentComponent } from './components/booking-content/booking-content.component';
+import {MatGridList, MatGridTile} from "@angular/material/grid-list";
 
 @NgModule({
   declarations: [
@@ -35,7 +39,10 @@ import { VeterinaryContentComponent } from './components/veterinary-content/vete
     HomeContentComponent,
     ServicesContentComponent,
     NavbarComponent,
-    VeterinaryContentComponent
+    VeterinaryContentComponent,
+    SupportContentComponent,
+    ProfileContentComponent,
+    BookingContentComponent
   ],
   imports: [
     BrowserModule,
@@ -58,6 +65,10 @@ import { VeterinaryContentComponent } from './components/veterinary-content/vete
     MatCardTitle,
     MatCardSubtitle,
     MatToolbar,
+    MatHint,
+    MatFormFieldModule,
+    MatGridTile,
+    MatGridList
   ],
   providers: [
     provideAnimationsAsync()
