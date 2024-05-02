@@ -25,6 +25,7 @@ import {
 import { ServicesContentComponent } from './components/services-content/services-content.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import {MatToolbar} from "@angular/material/toolbar";
+import { VeterinaryContentComponent } from './components/veterinary-content/veterinary-content.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import {MatToolbar} from "@angular/material/toolbar";
     LoginViewComponent,
     HomeContentComponent,
     ServicesContentComponent,
-    NavbarComponent
+    NavbarComponent,
+    VeterinaryContentComponent
   ],
   imports: [
     BrowserModule,
