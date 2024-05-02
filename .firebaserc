@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "petcare-v": {
+      "hosting": {
+        "petcarev1": [
+          "petcare-v"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "petcare-v"
+  }
+}

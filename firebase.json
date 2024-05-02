@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "petcarev1",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}
