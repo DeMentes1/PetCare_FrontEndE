@@ -8,17 +8,20 @@ import { RegisterViewComponent } from './components/register/register-view/regis
 import {MatFormField} from "@angular/material/form-field";
 import {MatInput} from "@angular/material/input";
 import {MatIcon} from "@angular/material/icon";
-import {MatButton, MatIconButton} from "@angular/material/button";
+import {MatButton, MatFabButton, MatIconButton} from "@angular/material/button";
 import {MatCheckbox} from "@angular/material/checkbox";
 import {MatSlideToggle} from "@angular/material/slide-toggle";
 import {MatLabel} from "@angular/material/form-field";
 import { LoginViewComponent } from './components/login-view/login-view.component';
+import { HomeContentComponent } from './components/home-content/home-content.component';
+import {MatCard, MatCardContent, MatCardModule} from "@angular/material/card";
 
 @NgModule({
   declarations: [
     AppComponent,
     RegisterViewComponent,
-    LoginViewComponent
+    LoginViewComponent,
+    HomeContentComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +33,11 @@ import { LoginViewComponent } from './components/login-view/login-view.component
     MatCheckbox,
     MatSlideToggle,
     MatButton,
-    MatLabel
+    MatLabel,
+    MatCard,
+    MatCardModule,
+    MatCardContent,
+    MatFabButton
   ],
   providers: [
     provideAnimationsAsync()
