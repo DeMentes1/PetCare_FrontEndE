@@ -8,14 +8,16 @@ mat-toolbar {
 }
 
 img {
-  max-width: 100px;
-  padding-right: 50px;
+  max-width: 135px;
+  padding-right: 40px;
 }
 
 .logo{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .example-spacer {
