@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { RegisterViewComponent } from './components/register/register-view/register-view.component';
+import { RegisterViewComponent } from './components/register-view/register-view.component';
 import {MatFormField} from "@angular/material/form-field";
 import {MatInput} from "@angular/material/input";
 import {MatIcon, MatIconModule} from "@angular/material/icon";
